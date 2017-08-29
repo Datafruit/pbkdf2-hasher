@@ -1,5 +1,6 @@
-pbkdf2-hasher
+sugo-pbkdf2-hasher
 =============
+fork of `pbkdf2-hasher`, make it compatible with node 7+
 
 Password hashing and verification for Node using the built-in crypto.pbkdf2 (HMAC-SHA1).
 
@@ -9,7 +10,7 @@ as a string and easily saved (e.g. to a database).
 
 # Installation
 
-    $ npm install pbkdf2-hasher
+npm install sugo-pbkdf2-hasher
 
 # Usage
 
