@@ -13,7 +13,7 @@ function generateSalt(bytes, callback) {
 }
 
 function generateHash(password, salt, iterations, keylen, callback) {
-	crypto.pbkdf2(password, salt, iterations, keylen, function(err, key) {
+	crypto.pbkdf2(password, salt, iterations, keylen, 'SHA1', function(err, key) {
 		if (err) return callback(err);
 		var hash = _btoa(key);
 		hash = [ 'pbkdf2sha1', iterations, salt, hash ].join('$');
